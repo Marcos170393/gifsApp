@@ -1,0 +1,8 @@
+<div class=" text-center">
+    <img (load)="onLoaded()" 
+        class="w-100 card-img-top"
+        [src]="url" alt=""
+        [ngStyle]="{display: hasLoaded ? '' : 'none'}"
+    >
+    <img *ngIf="!hasLoaded" class="mt-3" height="35" width="35" src="/assets/loader.svg">
+</div>

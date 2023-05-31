@@ -10,4 +10,6 @@ export class CardListComponent {
   @Input()
   public gifList:Gif[]=[];
 
+  
+
 }
