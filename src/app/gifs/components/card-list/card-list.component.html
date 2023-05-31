@@ -1,0 +1,12 @@
+<div class="row justify-content-center">
+    <div *ngFor="let item of gifList" class="card col-md-3 col-sm-6 mb-2 mx-2 bg-dark">
+        <div class="card-header" style="min-height:100px;">
+            <img class="w-100 card-img-top" src="{{item.images.downsized_medium.url}}" alt="">
+        </div>
+        <div class="card-body">
+            <p class="card-text text-white">
+                {{item.title}}
+            </p>
+        </div>
+    </div>
+</div>

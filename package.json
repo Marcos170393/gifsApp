@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "build:deploy":"ng build --base-href ./; rm -R ./docs; cp -R ./dist/03-gifs-aps ./docs",
     "test": "ng test"
   },
   "private": true,
